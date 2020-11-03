@@ -1,0 +1,7 @@
+domain: programming-k8s.info
+repo: github.com/chauhanr/cnat-operator
+resources:
+- group: cnat
+  kind: At
+  version: v1alpha1
+version: "2"
