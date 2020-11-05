@@ -34,12 +34,22 @@ spec:
         spec:
           description: AtSpec defines the desired state of At
           properties:
-            foo:
-              description: Foo is an example field of At. Edit At_types.go to remove/update
+            command:
+              description: COmmand to run when the scheudle is reached.
+              type: string
+            schedule:
+              description: 'INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
+                Important: Run "make" to regenerate code after modifying this file'
               type: string
           type: object
         status:
           description: AtStatus defines the observed state of At
+          properties:
+            phase:
+              description: 'INSERT ADDITIONAL STATUS FIELD - define observed state
+                of cluster Important: Run "make" to regenerate code after modifying
+                this file'
+              type: string
           type: object
       type: object
   version: v1alpha1
